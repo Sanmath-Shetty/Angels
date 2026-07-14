@@ -23,7 +23,10 @@
   --text-inverse: var(--cream);
   --text-muted: #6b6459;
   --accent: var(--gold);
-  --accent-strong: var(--terracotta);
+  // Slightly deeper than --terracotta: the raw terracotta only reaches 4.28:1
+  // against --cream, just under WCAG AA's 4.5:1 minimum for text this size.
+  // This shade reaches 5.11:1 while remaining visually the same color family.
+  --accent-strong: #a24d34;
 
   // Glass
   --glass-bg: rgba(255, 253, 248, 0.6);

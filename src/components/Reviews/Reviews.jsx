@@ -20,7 +20,7 @@ function Card({ r }) {
       <div className={styles.cardHead}>
         <div className={styles.avatar}>{r.initials}</div>
         <div>
-          <h4>{r.name}</h4>
+          <h3>{r.name}</h3>
           {r.location && <p>{r.location}</p>}
         </div>
       </div>

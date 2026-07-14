@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiOutlineMail, HiOutlineArrowLeft } from 'react-icons/hi';
 import PageTransition from '../components/PageTransition.jsx';
+import useDocumentHead from '../hooks/useDocumentHead.js';
 import styles from './Legal.module.scss';
 
 const sections = [
@@ -39,9 +40,15 @@ const sections = [
 ];
 
 export default function Terms() {
+  useDocumentHead({
+    title: 'Terms of Use | Angels Avenue',
+    description: 'Terms of Use for Angels Avenue, a hilltop homestay in Karkala, Karnataka — booking terms, third-party links, and liability information.',
+    path: '/terms',
+  });
+
   return (
     <PageTransition>
-      <div className={styles.page}>
+      <main className={styles.page} id="main-content">
         <div className="container">
           <Link to="/" className={styles.back}><HiOutlineArrowLeft /> Angels Avenue</Link>
 
@@ -101,7 +108,7 @@ export default function Terms() {
               <div className={styles.contactBox}>
                 <HiOutlineMail size={22} />
                 <div>
-                  <h4>Reach Out to Us</h4>
+                  <h3>Reach Out to Us</h3>
                   <p>Please contact Angels Avenue directly and our team will address your concerns promptly and courteously.</p>
                 </div>
               </div>
@@ -113,7 +120,7 @@ export default function Terms() {
             <p>Designed with ♥ by meowLabs, Karnataka.</p>
           </div>
         </div>
-      </div>
+      </main>
     </PageTransition>
   );
 }

@@ -1,6 +1,8 @@
 @import './variables.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap');
+// Font loading moved to <link> tags in index.html (preload + preconnect) so the
+// browser can fetch them in parallel with this stylesheet instead of waiting to
+// parse this file first, discover the @import, then start a second CSS fetch.
 
 * {
   margin: 0;
@@ -62,6 +64,39 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar-thumb {
   background: var(--forest-light);
   border-radius: 10px;
+}
+
+// Respect the OS-level "reduce motion" preference for plain CSS
+// animations/transitions (framer-motion's own <MotionConfig reducedMotion="user">
+// in App.jsx already covers JS-driven motion, but it can't reach @keyframes
+// defined directly in .module.scss files, e.g. the hero particles/scroll dot).
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Skip link: visually hidden until keyboard-focused, lets keyboard/screen-reader
+// users jump straight to <main> instead of tabbing through the whole navbar.
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  z-index: 1000;
+  background: var(--forest-deep);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-weight: 500;
+  transition: top 0.2s var(--ease-luxury);
+
+  &:focus {
+    top: 12px;
+  }
 }
 
 .container {

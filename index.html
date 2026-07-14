@@ -10,20 +10,66 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Angels Avenue – A peaceful hilltop homestay in Karkala, Karnataka. Surrounded by lush greenery with panoramic views." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://angelsavenue.in/" />
     <title>Angels Avenue | Hilltop Homestay, Karkala</title>
+
+    <!-- Performance: connection warm-up for third-party origins used on first paint -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://dulcet-youtiao-d7a470.netlify.app" crossorigin />
+    <link rel="dns-prefetch" href="https://dulcet-youtiao-d7a470.netlify.app" />
+
+    <!-- Hero image is the LCP element on first paint; preload it so the browser
+         doesn't wait to discover it via the JS-rendered <img> -->
+    <link rel="preload" as="image" href="https://dulcet-youtiao-d7a470.netlify.app/images/Gemini_Generated_Image_opdehiopdehiopde.png" fetchpriority="high" />
+
+    <!-- Fonts: loaded here (instead of an @import inside global.scss) so the
+         browser discovers and fetches them immediately, in parallel with the
+         CSS/JS bundles, rather than after the stylesheet that imports them
+         has itself downloaded and parsed. display=swap avoids invisible text. -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" />
 
     <!-- Open Graph / social share preview (WhatsApp, Instagram, Facebook) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Angels Avenue" />
     <meta property="og:title" content="Angels Avenue | Hilltop Homestay, Karkala" />
     <meta property="og:description" content="A peaceful hilltop homestay in Karkala, Karnataka. Surrounded by lush greenery with panoramic views." />
-    <meta property="og:image" content="/images/angel.png" />
+    <meta property="og:image" content="https://angelsavenue.in/images/angel.webp" />
     <meta property="og:url" content="https://angelsavenue.in/" />
+    <meta property="og:locale" content="en_IN" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Angels Avenue | Hilltop Homestay, Karkala" />
     <meta name="twitter:description" content="A peaceful hilltop homestay in Karkala, Karnataka. Surrounded by lush greenery with panoramic views." />
-    <meta name="twitter:image" content="/images/angel.png" />
+    <meta name="twitter:image" content="https://angelsavenue.in/images/angel.webp" />
+
+    <!-- Structured data: LodgingBusiness schema so search engines can surface
+         business info (address, contact, socials) directly in results. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Angels Avenue",
+      "description": "A peaceful hilltop homestay in Karkala, Karnataka. Surrounded by lush greenery with panoramic views.",
+      "url": "https://angelsavenue.in/",
+      "image": "https://angelsavenue.in/images/angel.webp",
+      "telephone": ["+91 99808 81076", "+91 96060 03584"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Angels Avenue, Opposite Bethanya Church",
+        "addressLocality": "Karkala",
+        "addressRegion": "Karnataka",
+        "postalCode": "574104",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.instagram.com/angelsavenuehomestay?igsh=cnNjczBxdWo5ZnBp",
+        "https://www.facebook.com/p/Angel-avenue-homestay-Karkala-100068944046087/"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

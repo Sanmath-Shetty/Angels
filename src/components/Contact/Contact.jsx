@@ -25,7 +25,7 @@ export default function Contact() {
             <div className={styles.infoItem}>
               <div className={styles.iconBox}><HiOutlineLocationMarker size={22} /></div>
               <div>
-                <h4>Address</h4>
+                <h3>Address</h3>
                 {siteInfo.address.map((line) => <p key={line}>{line}</p>)}
               </div>
             </div>
@@ -33,7 +33,7 @@ export default function Contact() {
             <div className={styles.infoItem}>
               <div className={styles.iconBox}><HiOutlinePhone size={22} /></div>
               <div>
-                <h4>Phone Number 1</h4>
+                <h3>Phone Number 1</h3>
                 <p><a href={siteInfo.phoneHref}>{siteInfo.phone}</a></p>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Contact() {
             <div className={styles.infoItem}>
               <div className={styles.iconBox}><HiOutlinePhone size={22} /></div>
               <div>
-                <h4>Phone Number 2</h4>
+                <h3>Phone Number 2</h3>
                 <p><a href={siteInfo.phone2Href}>{siteInfo.phone2}</a></p>
               </div>
             </div>

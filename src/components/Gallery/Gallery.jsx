@@ -36,6 +36,7 @@ export default function Gallery() {
         >
           {galleryImages.map((img, i) => (
             <motion.button
+              type="button"
               key={img.id}
               className={`${styles.tile} ${styles['tile' + (i % 5)]}`}
               variants={fadeUp}

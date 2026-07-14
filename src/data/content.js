@@ -11,7 +11,6 @@ export const siteInfo = {
   phone2: '+91 96060 03584',
   phone2Href: 'tel:+919606003584',
   whatsapp: 'https://wa.me/919980881076',
-  email: 'stay@angelsavenue.in',
   instagram: 'https://www.instagram.com/angelsavenuehomestay?igsh=cnNjczBxdWo5ZnBp',
   facebook: 'https://www.facebook.com/p/Angel-avenue-homestay-Karkala-100068944046087/',
   mapsLink: 'https://maps.google.com/?q=Angels+Avenue+Karkala+Karnataka',
@@ -24,7 +23,7 @@ export const siteInfo = {
 };
 
 export const heroImage = `${BASE}/Gemini_Generated_Image_opdehiopdehiopde.png`;
-export const aboutNatureImage = '/images/angel.png';
+export const aboutNatureImage = '/images/angel.webp';
 
 export const aboutFeatures = [
   {
@@ -55,53 +54,53 @@ export const aboutFeatures = [
 const GALLERY = '/images/gallery';
 export const galleryImages = [
   // Entrance
-  { id: 'entrance', category: 'Entrance', label: 'Main Entrance', src: `${GALLERY}/entrance.png` },
+  { id: 'entrance', category: 'Entrance', label: 'Main Entrance', src: `${GALLERY}/entrance.webp` },
 
   // Exterior
-  { id: 'exterior-1', category: 'Exterior', label: 'Exterior View', src: `${GALLERY}/outside.png` },
-  { id: 'exterior-2', category: 'Exterior', label: 'Property Facade', src: `${GALLERY}/outside1.png` },
-  { id: 'exterior-3', category: 'Exterior', label: 'Garden View', src: `${GALLERY}/outside2.png` },
-  { id: 'exterior-4', category: 'Exterior', label: 'House Exterior', src: `${GALLERY}/outside_house.png` },
-  { id: 'exterior-5', category: 'Exterior', label: 'Parking Area', src: `${GALLERY}/outside_parking.png` },
-  { id: 'exterior-6', category: 'Exterior', label: 'Outdoor Space', src: `${GALLERY}/outdoor.png` },
+  { id: 'exterior-1', category: 'Exterior', label: 'Exterior View', src: `${GALLERY}/outside.webp` },
+  { id: 'exterior-2', category: 'Exterior', label: 'Property Facade', src: `${GALLERY}/outside1.webp` },
+  { id: 'exterior-3', category: 'Exterior', label: 'Garden View', src: `${GALLERY}/outside2.webp` },
+  { id: 'exterior-4', category: 'Exterior', label: 'House Exterior', src: `${GALLERY}/outside_house.webp` },
+  { id: 'exterior-5', category: 'Exterior', label: 'Parking Area', src: `${GALLERY}/outside_parking.webp` },
+  { id: 'exterior-6', category: 'Exterior', label: 'Outdoor Space', src: `${GALLERY}/outdoor.webp` },
 
   // Living
-  { id: 'living-1', category: 'Living', label: 'Living Room', src: `${GALLERY}/living_room.png` },
-  { id: 'living-2', category: 'Living', label: 'Living Room Lounge', src: `${GALLERY}/living_room2.png` },
+  { id: 'living-1', category: 'Living', label: 'Living Room', src: `${GALLERY}/living_room.webp` },
+  { id: 'living-2', category: 'Living', label: 'Living Room Lounge', src: `${GALLERY}/living_room2.webp` },
 
   // Bedrooms
-  { id: 'bedroom-1', category: 'Bedrooms', label: 'Room One', src: `${GALLERY}/room1.png` },
-  { id: 'bedroom-1-aesthetic', category: 'Bedrooms', label: 'Room One Detail', src: `${GALLERY}/room1_aesthetic.png` },
-  { id: 'bedroom-2', category: 'Bedrooms', label: 'Room Two', src: `${GALLERY}/room2.png` },
-  { id: 'bedroom-3', category: 'Bedrooms', label: 'Room Three', src: `${GALLERY}/room3.png` },
-  { id: 'bedroom-4', category: 'Bedrooms', label: 'Room Four', src: `${GALLERY}/room4.png` },
+  { id: 'bedroom-1', category: 'Bedrooms', label: 'Room One', src: `${GALLERY}/room1.webp` },
+  { id: 'bedroom-1-aesthetic', category: 'Bedrooms', label: 'Room One Detail', src: `${GALLERY}/room1_aesthetic.webp` },
+  { id: 'bedroom-2', category: 'Bedrooms', label: 'Room Two', src: `${GALLERY}/room2.webp` },
+  { id: 'bedroom-3', category: 'Bedrooms', label: 'Room Three', src: `${GALLERY}/room3.webp` },
+  { id: 'bedroom-4', category: 'Bedrooms', label: 'Room Four', src: `${GALLERY}/room4.webp` },
 
   // Bathrooms
-  { id: 'bathroom-1', category: 'Bathrooms', label: 'Room One Bathroom', src: `${GALLERY}/room1_bathroom.png` },
-  { id: 'bathroom-4', category: 'Bathrooms', label: 'Room Four Bathroom', src: `${GALLERY}/room4_bathroom.png` },
-  { id: 'bathroom-common', category: 'Bathrooms', label: 'Common Bathroom', src: `${GALLERY}/common_bathroom.png` },
-  { id: 'bathroom-wash', category: 'Bathrooms', label: 'Washroom', src: `${GALLERY}/washroom2.png` },
+  { id: 'bathroom-1', category: 'Bathrooms', label: 'Room One Bathroom', src: `${GALLERY}/room1_bathroom.webp` },
+  { id: 'bathroom-4', category: 'Bathrooms', label: 'Room Four Bathroom', src: `${GALLERY}/room4_bathroom.webp` },
+  { id: 'bathroom-common', category: 'Bathrooms', label: 'Common Bathroom', src: `${GALLERY}/common_bathroom.webp` },
+  { id: 'bathroom-wash', category: 'Bathrooms', label: 'Washroom', src: `${GALLERY}/washroom2.webp` },
 
   // Balcony
-  { id: 'balcony-1', category: 'Balcony', label: 'Room One Balcony', src: `${GALLERY}/room1_balcony.png` },
-  { id: 'balcony-2', category: 'Balcony', label: 'Room Two Balcony', src: `${GALLERY}/room2_balcony.png` },
-  { id: 'balcony-common', category: 'Balcony', label: 'Common Balcony', src: `${GALLERY}/common_balcony.png` },
+  { id: 'balcony-1', category: 'Balcony', label: 'Room One Balcony', src: `${GALLERY}/room1_balcony.webp` },
+  { id: 'balcony-2', category: 'Balcony', label: 'Room Two Balcony', src: `${GALLERY}/room2_balcony.webp` },
+  { id: 'balcony-common', category: 'Balcony', label: 'Common Balcony', src: `${GALLERY}/common_balcony.webp` },
 
   // Upper Floor
-  { id: 'upper-angels', category: 'Upper Floor', label: 'Upper Floor Angels View', src: `${GALLERY}/upper_floor_angels.png` },
-  { id: 'upper-ceiling', category: 'Upper Floor', label: 'Ceiling Detail', src: `${GALLERY}/upper_floor_ceiling.png` },
-  { id: 'upper-ceiling-top', category: 'Upper Floor', label: 'Ceiling Top View', src: `${GALLERY}/upper_floor_ceiling_top.png` },
-  { id: 'upper-ceiling-feature', category: 'Upper Floor', label: 'Ceiling Feature', src: `${GALLERY}/upperfloor_ceiling.png` },
-  { id: 'upper-view', category: 'Upper Floor', label: 'Upper Floor View', src: `${GALLERY}/upperview.png` },
+  { id: 'upper-angels', category: 'Upper Floor', label: 'Upper Floor Angels View', src: `${GALLERY}/upper_floor_angels.webp` },
+  { id: 'upper-ceiling', category: 'Upper Floor', label: 'Ceiling Detail', src: `${GALLERY}/upper_floor_ceiling.webp` },
+  { id: 'upper-ceiling-top', category: 'Upper Floor', label: 'Ceiling Top View', src: `${GALLERY}/upper_floor_ceiling_top.webp` },
+  { id: 'upper-ceiling-feature', category: 'Upper Floor', label: 'Ceiling Feature', src: `${GALLERY}/upperfloor_ceiling.webp` },
+  { id: 'upper-view', category: 'Upper Floor', label: 'Upper Floor View', src: `${GALLERY}/upperview.webp` },
 
   // Nature
-  { id: 'nature', category: 'Nature', label: 'Nature Around Property', src: `${GALLERY}/nature_view.png` },
+  { id: 'nature', category: 'Nature', label: 'Nature Around Property', src: `${GALLERY}/nature_view.webp` },
 
   // Decor
-  { id: 'decor-board', category: 'Decor', label: 'Welcome Board', src: `${GALLERY}/board.png` },
-  { id: 'decor-jesus', category: 'Decor', label: 'Devotional Corner', src: `${GALLERY}/jesus.png` },
-  { id: 'decor-vase', category: 'Decor', label: 'Decorative Vase', src: `${GALLERY}/vase.png` },
-  { id: 'decor-gun', category: 'Decor', label: 'Vintage Decor Piece', src: `${GALLERY}/gun.png` },
+  { id: 'decor-board', category: 'Decor', label: 'Welcome Board', src: `${GALLERY}/board.webp` },
+  { id: 'decor-jesus', category: 'Decor', label: 'Devotional Corner', src: `${GALLERY}/jesus.webp` },
+  { id: 'decor-vase', category: 'Decor', label: 'Decorative Vase', src: `${GALLERY}/vase.webp` },
+  { id: 'decor-gun', category: 'Decor', label: 'Vintage Decor Piece', src: `${GALLERY}/gun.webp` },
 ];
 
 // Nearby tourist spots around Karkala, distances approximated by road from
@@ -116,7 +115,7 @@ export const nearbyAttractions = [
     distance: '2.5 km',
     duration: '~7 min drive',
     desc: 'A 42-foot monolithic statue of Lord Bahubali carved from a single rock in 1432, second tallest of its kind in Karnataka. A short climb up rock-cut steps rewards you with sweeping views of Karkala town.',
-    image: '/images/attractions/gommata.jpg',
+    image: '/images/attractions/gommata.webp',
     mapsQuery: 'Gomateshwara Statue Karkala',
   },
   {
@@ -126,7 +125,7 @@ export const nearbyAttractions = [
     distance: '2.7 km',
     duration: '~7 min drive',
     desc: 'A striking 16th-century Jain temple with four identical entrances facing every direction, built entirely from granite across 108 carved pillars. One of Karkala\u2019s finest heritage landmarks.',
-    image: '/images/attractions/chaturmukha.jpg',
+    image: '/images/attractions/chaturmukha.webp',
     mapsQuery: 'Chaturmukha Basadi Karkala',
   },
   {
@@ -136,7 +135,7 @@ export const nearbyAttractions = [
     distance: '1.5 km',
     duration: '~5 min drive',
     desc: 'A picturesque 7-acre artificial lake built in 1262, once used to bathe royal elephants. A small Jain temple sits at its centre, framed by water lilies and calm reflections.',
-    image: '/images/attractions/aanekere.png',
+    image: '/images/attractions/aanekere.webp',
     mapsQuery: 'Anekere Lake Karkala',
   },
   {
@@ -146,7 +145,7 @@ export const nearbyAttractions = [
     distance: '1.8 km',
     duration: '~5 min drive',
     desc: 'An ancient and revered temple dedicated to Lord Vishnu in his reclining form, known for its intricate wood carvings and centuries-old spiritual significance to the region.',
-    image: '/images/attractions/anantha.jpeg',
+    image: '/images/attractions/anantha.webp',
     mapsQuery: 'Sri Anantha Padmanabha Temple Karkala',
   },
   {
@@ -156,7 +155,7 @@ export const nearbyAttractions = [
     distance: '5 km',
     duration: '~12 min drive',
     desc: 'A historic Roman Catholic basilica dating back to 1759, famed for its miracles and Neo-Gothic architecture. The annual Attur Jatre in January draws thousands of devotees from across faiths.',
-    image: '/images/attractions/attur_church.png',
+    image: '/images/attractions/attur_church.webp',
     mapsQuery: 'St Lawrence Church Attur Karkala',
   },
   {
@@ -166,7 +165,7 @@ export const nearbyAttractions = [
   distance: '1.6 km',
   duration: '~5 min drive',
   desc: 'A 550-year-old temple of Lord Venkataramana, fondly called "Padu Tirupati" (Tirupati of the West) for its rituals mirroring Tirumala. Founded by Goud Saraswat Brahmins, it\u2019s one of Karkala\u2019s most revered shrines.',
-  image: '/images/attractions/venkata.jpeg',
+  image: '/images/attractions/venkata.webp',
   mapsQuery: 'Shri Venkataramana Temple Padutirupati Karkala',
 },
 ];

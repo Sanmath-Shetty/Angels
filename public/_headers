@@ -1,0 +1,28 @@
+# Netlify header rules for production caching.
+# Hashed build output (JS/CSS emitted by Vite into /assets/*) is safe to cache
+# forever -- any code change produces a new filename, so there's no staleness risk.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Local images rarely change and are already content-fingerprinted by filename
+# in this project; cache them for a month with revalidation instead of forever,
+# since (unlike /assets) a photo could be swapped in place under the same name.
+/images/*
+  Cache-Control: public, max-age=2592000, must-revalidate
+
+# HTML must always be revalidated so visitors get the latest deploy immediately.
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  # Report-only for now: this lets you verify in the browser console that
+  # nothing legitimate gets flagged (Framer Motion's runtime inline `style`
+  # attributes, Google Fonts, the Google Maps iframe embed, and the
+  # LodgingBusiness JSON-LD block are all accounted for below) before
+  # switching this to an enforced `Content-Security-Policy` header.
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://dulcet-youtiao-d7a470.netlify.app; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://dulcet-youtiao-d7a470.netlify.app; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'

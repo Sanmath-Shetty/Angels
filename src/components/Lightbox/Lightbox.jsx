@@ -1,15 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiOutlineX, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import styles from './Lightbox.module.scss';
 
 export default function Lightbox({ images, index, onClose, onNav }) {
   const open = index !== null;
+  const closeBtnRef = useRef(null);
 
-  // Keyboard nav (Escape to close, arrows to browse) + lock background
-  // scroll while the lightbox is open.
+  // Keyboard nav (Escape to close, arrows to browse), focus management
+  // (move focus into the dialog on open, return it to the triggering
+  // gallery tile on close), and lock background scroll while open.
   useEffect(() => {
     if (!open) return undefined;
+
+    const previouslyFocused = document.activeElement;
+    closeBtnRef.current?.focus();
 
     const onKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
@@ -24,6 +29,7 @@ export default function Lightbox({ images, index, onClose, onNav }) {
     return () => {
       document.body.style.overflow = prevOverflow;
       window.removeEventListener('keydown', onKeyDown);
+      previouslyFocused?.focus?.();
     };
   }, [open, onClose, onNav]);
 
@@ -42,11 +48,12 @@ export default function Lightbox({ images, index, onClose, onNav }) {
           aria-modal="true"
           aria-label={img.label}
         >
-          <button className={styles.close} onClick={onClose} aria-label="Close">
+          <button type="button" className={styles.close} onClick={onClose} aria-label="Close" ref={closeBtnRef}>
             <HiOutlineX size={28} />
           </button>
 
           <button
+            type="button"
             className={styles.navBtn}
             style={{ left: 20 }}
             onClick={(e) => { e.stopPropagation(); onNav(-1); }}
@@ -69,6 +76,7 @@ export default function Lightbox({ images, index, onClose, onNav }) {
           </motion.div>
 
           <button
+            type="button"
             className={styles.navBtn}
             style={{ right: 20 }}
             onClick={(e) => { e.stopPropagation(); onNav(1); }}

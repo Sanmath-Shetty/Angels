@@ -14,7 +14,7 @@ export default function Booking() {
       <div className="container">
         <div className={styles.header}>
           <span className="section-eyebrow">Reserve Your Spot</span>
-          <h2 className="section-title ">Book Your Stay</h2>
+          <h2 className="section-title">Book Your Stay</h2>
           <p className={styles.subtext}>Choose your preferred platform to book Angels Avenue</p>
         </div>
 

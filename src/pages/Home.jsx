@@ -9,19 +9,28 @@ import Booking from '../components/Booking/Booking.jsx';
 import Contact from '../components/Contact/Contact.jsx';
 import MapSection from '../components/Map/Map.jsx';
 import Footer from '../components/Footer/Footer.jsx';
+import useDocumentHead from '../hooks/useDocumentHead.js';
 
 export default function Home() {
+  useDocumentHead({
+    title: 'Angels Avenue | Hilltop Homestay, Karkala',
+    description: 'Angels Avenue – A peaceful hilltop homestay in Karkala, Karnataka. Surrounded by lush greenery with panoramic views.',
+    path: '/',
+  });
+
   return (
     <PageTransition>
       <Navbar />
-      <Hero />
-      <About />
-      <Gallery />
-      <Attractions />
-      <Reviews />
-      <Booking />
-      <Contact />
-      <MapSection />
+      <main id="main-content">
+        <Hero />
+        <About />
+        <Gallery />
+        <Attractions />
+        <Reviews />
+        <Booking />
+        <Contact />
+        <MapSection />
+      </main>
       <Footer />
     </PageTransition>
   );

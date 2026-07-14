@@ -36,7 +36,7 @@ function AttractionCard({ spot }) {
       </div>
 
       <div className={styles.body}>
-        <h4>{spot.name}</h4>
+        <h3>{spot.name}</h3>
         <p className={styles.location}>
           <LuMapPin size={14} /> {spot.location}
         </p>

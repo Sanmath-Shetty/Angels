@@ -13,8 +13,8 @@ export default function Footer() {
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.brandCol}>
-            <button onClick={() => goTo('#home')} className={styles.logo}>
-              <img src="/images/logo-mark.png" alt="Angels Avenue" />
+            <button type="button" onClick={() => goTo('#home')} className={styles.logo}>
+              <img src="/images/logo-mark.webp" alt="Angels Avenue" />
               Angels Avenue
             </button>
             <p>
@@ -29,22 +29,22 @@ export default function Footer() {
           </div>
 
           <div className={styles.col}>
-            <h4>Quick Links</h4>
+            <h3>Quick Links</h3>
             {navLinks.map((l) => (
-              <button key={l.href} onClick={() => goTo(l.href)}>{l.label}</button>
+              <button type="button" key={l.href} onClick={() => goTo(l.href)}>{l.label}</button>
             ))}
-            <button onClick={() => goTo('#booking')}>Book Now</button>
+            <button type="button" onClick={() => goTo('#booking')}>Book Now</button>
           </div>
 
           <div className={styles.col}>
-            <h4>Book With Us</h4>
+            <h3>Book With Us</h3>
             {bookingPlatforms.map((p) => (
               <a key={p.id} href={p.link} target="_blank" rel="noreferrer">{p.name}</a>
             ))}
           </div>
 
           <div className={styles.col}>
-            <h4>Contact</h4>
+            <h3>Contact</h3>
             <p>{siteInfo.address[1]}<br />{siteInfo.address[2]} {siteInfo.address[3].split(',')[0]}</p>
             <a href={siteInfo.phoneHref}>{siteInfo.phone}</a>
             <a href={siteInfo.phone2Href}>{siteInfo.phone2}</a>

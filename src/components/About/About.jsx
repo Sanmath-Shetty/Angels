@@ -110,7 +110,7 @@ export default function About() {
                       <Icon size={20} />
                     </div>
                     <div>
-                      <h4>{f.title}</h4>
+                      <h3>{f.title}</h3>
                       <p>{f.desc}</p>
                     </div>
                   </motion.div>

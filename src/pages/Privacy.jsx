@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiOutlineMail, HiOutlineArrowLeft } from 'react-icons/hi';
 import PageTransition from '../components/PageTransition.jsx';
+import useDocumentHead from '../hooks/useDocumentHead.js';
 import styles from './Legal.module.scss';
 
 const sections = [
@@ -31,9 +32,15 @@ const sections = [
 ];
 
 export default function Privacy() {
+  useDocumentHead({
+    title: 'Privacy Policy | Angels Avenue',
+    description: 'Read the Privacy Policy for Angels Avenue, a hilltop homestay in Karkala, Karnataka — how we collect, use, and protect your information.',
+    path: '/privacy',
+  });
+
   return (
     <PageTransition>
-      <div className={styles.page}>
+      <main className={styles.page} id="main-content">
         <div className="container">
           <Link to="/" className={styles.back}><HiOutlineArrowLeft /> Angels Avenue</Link>
 
@@ -97,7 +104,7 @@ export default function Privacy() {
               <div className={styles.contactBox}>
                 <HiOutlineMail size={22} />
                 <div>
-                  <h4>Get In Touch</h4>
+                  <h3>Get In Touch</h3>
                   <p>Please reach out to Angels Avenue directly and our team will be happy to address any privacy-related concerns.</p>
                 </div>
               </div>
@@ -109,7 +116,7 @@ export default function Privacy() {
             <p>Designed with ♥ by meowLabs, Karnataka.</p>
           </div>
         </div>
-      </div>
+      </main>
     </PageTransition>
   );
 }
