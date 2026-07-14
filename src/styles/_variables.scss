@@ -1,0 +1,51 @@
+// Angels Avenue — Design Tokens
+// Luxury hilltop homestay palette
+
+:root {
+  // Core palette
+  --forest-deep: #16302a;
+  --forest: #1f4438;
+  --forest-light: #3a6b58;
+  --cream: #f6f1e6;
+  --cream-soft: #efe7d6;
+  --gold: #c9a25f;
+  --gold-bright: #e0b96f;
+  --terracotta: #b5563a;
+  --terracotta-soft: #c97456;
+  --charcoal: #22201d;
+  --charcoal-soft: #3d3a35;
+  --white: #fffdf8;
+
+  // Semantic
+  --bg-body: var(--cream);
+  --bg-dark: var(--forest-deep);
+  --text-main: var(--charcoal);
+  --text-inverse: var(--cream);
+  --text-muted: #6b6459;
+  --accent: var(--gold);
+  --accent-strong: var(--terracotta);
+
+  // Glass
+  --glass-bg: rgba(255, 253, 248, 0.6);
+  --glass-bg-dark: rgba(22, 48, 42, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --glass-border-dark: rgba(255, 255, 255, 0.12);
+
+  // Typography
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Jost', sans-serif;
+
+  // Motion
+  --ease-luxury: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 0.4s;
+  --dur-mid: 0.6s;
+  --dur-slow: 0.8s;
+
+  // Layout
+  --container-max: 1240px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --shadow-soft: 0 10px 40px rgba(22, 20, 17, 0.08);
+  --shadow-deep: 0 25px 60px rgba(22, 20, 17, 0.18);
+}

@@ -1,0 +1,125 @@
+@import '../../styles/variables.scss';
+
+.reviews {
+  background: var(--forest-deep);
+  overflow: hidden;
+
+  :global(.section-eyebrow) {
+    color: var(--gold-bright);
+    &::before { background: var(--gold-bright); }
+  }
+
+  :global(.section-title) {
+    color: var(--white);
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtext {
+  margin-top: 14px;
+  color: rgba(255, 253, 248, 0.65);
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  animation: scroll-left 55s linear infinite;
+  padding: 0 16px;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.card {
+  flex: 0 0 340px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  h4 {
+    font-family: var(--font-body);
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  p {
+    font-size: 0.78rem;
+    color: rgba(255, 253, 248, 0.55);
+  }
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--gold), var(--terracotta));
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.filled { color: var(--gold-bright); }
+.empty { color: rgba(255, 255, 255, 0.2); }
+
+.ratingNum {
+  margin-left: 6px;
+  font-size: 0.78rem;
+  color: rgba(255, 253, 248, 0.6);
+}
+
+.text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(255, 253, 248, 0.85);
+  flex-grow: 1;
+}
+
+.date {
+  font-size: 0.72rem;
+  color: rgba(255, 253, 248, 0.4);
+  letter-spacing: 0.04em;
+}
