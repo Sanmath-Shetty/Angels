@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://angelsavenue.in/sitemap.xml
+Sitemap: https://www.stayangelsavenue.com/sitemap.xml
