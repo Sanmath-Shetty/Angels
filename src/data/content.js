@@ -1,7 +1,7 @@
 // Central content store — all real Angels Avenue business data.
 // Image URLs point to the existing live assets; swap with local files in /public/images when available.
 
-const BASE = 'https://dulcet-youtiao-d7a470.netlify.app/images';
+export const heroImage = '/images/hero.webp';
 
 export const siteInfo = {
   name: 'Angels Avenue',
