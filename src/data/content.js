@@ -248,7 +248,7 @@ export const bookingPlatforms = [
   {
     id: 'makemytrip',
     name: 'MakeMyTrip',
-    logo: `${BASE}/makemytrip.png`,
+    logo: `/images/makemytrip.webp`,
     desc: "Find exclusive deals and easy booking options on India's top travel platform.",
     perks: ['EMI Options Available', 'Coupon Discounts', '24/7 Support'],
     link: 'https://www.makemytrip.com/hotels/angels_avenue_karkala-details-karkala.html',
@@ -258,7 +258,7 @@ export const bookingPlatforms = [
   {
     id: 'airbnb',
     name: 'Airbnb',
-    logo: `${BASE}/air.jpeg`,
+    logo: `/images/air.webp`,
     desc: 'Experience authentic local living. Book directly with secure payments and flexible options.',
     perks: ['Flexible Cancellation', 'Verified Listing', 'Instant Booking'],
     link: 'https://www.airbnb.co.in/rooms/1289147121005557726',
@@ -267,7 +267,7 @@ export const bookingPlatforms = [
   {
     id: 'goibibo',
     name: 'Goibibo',
-    logo: `${BASE}/goibibo-logo.png`,
+    logo: `/images/goibibo-logo.webp`,
     desc: 'Earn GoCoins with every booking and enjoy great cashback deals on your stay.',
     perks: ['GoCoins Cashback', 'Price Match Guarantee', 'Easy Modifications'],
     link: 'https://www.goibibo.com/hotels/angels-avenue-karkala-hotel-in-karkal-202783882553863253/',
