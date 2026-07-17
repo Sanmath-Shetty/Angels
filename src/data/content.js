@@ -22,7 +22,6 @@ export const siteInfo = {
   ],
 };
 
-export const heroImage = `${BASE}/Gemini_Generated_Image_opdehiopdehiopde.png`;
 export const aboutNatureImage = '/images/angel.webp';
 
 export const aboutFeatures = [
